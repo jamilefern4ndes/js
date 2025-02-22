@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condições</title>
+    <style>
+        body{
+            background-image: linear-gradient(to left, rgb(110, 2, 2), rgb(1, 1, 129));
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        main{
+            height: 50vh;
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            justify-content: center;
+        }
+        main > h1,p{
+            color: white;
+        }
+        section{
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            text-align: center;
+        }
+        input{
+            width: 70px;
+        }
+        div#res>p{
+            color: rgb(44, 44, 44);
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Sitema de Multas</h1>
+        <p>limite: 65Km/h</p>
+        <section>
+            velocidade: <input type="number" name="txtnum" id="textnum">Km/h 
+            <p><input type="button" value="verificar" onclick="verificar()"></p>
+            <div id="res"></div>
+        </section>
+    </main>
+</body>
+<script>
+    function verificar(){
+        var vel = Number(document.getElementById('textnum').value)
+        var res = document.getElementById('res')
+        res.innerHTML = `<p>Sua velocidade foi de <strong>${vel}km/h. </strong></p>`
+        if (vel>65){
+            res.innerHTML += '<p>Por isso você foi multado.</p>'
+        }
+    }
+</script>
+</html>

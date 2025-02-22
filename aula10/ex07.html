@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>somando</title>
+    <style>
+        body{
+            background-color: rgb(3, 66, 3);
+        }
+        main{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 70vh;
+            flex-flow: column;
+        }
+        h1{
+            color: white;
+            text-shadow: 1px 0px black;
+        }
+        #ambiente{
+            border-radius: 10px;
+            width: 215px;
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+            background-color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        input{
+            width: 55px;
+            text-align: center;
+        }
+        #res{
+            width: 40px;
+            height: 30px;
+            border: 0.5px solid black;
+            border-radius: 10px;
+            margin: auto;
+            line-height: 30px;
+            display: none;
+        }
+        .botao{
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>SOMANDO VALORES</h1>
+        <div id="ambiente">
+            
+            <input type="number" name="caixa1" id="caixa1" placeholder="valor 1"> +
+            <input type="number" name="caixa2" id="caixa2" placeholder="valor 2">
+            <input type="button" value="=" onclick="somar()" class="botao">
+            <div id="res"></div>
+        </div>
+        
+    </main>
+</body>
+<script>
+    function somar(){
+        var cx1 = document.getElementById('caixa1')
+        var cx2 = document.getElementById('caixa2')
+        var n1 = Number.parseInt(cx1.value)
+        var n2 = Number.parseInt(cx2.value)
+        var resu = document.getElementById('res')
+        resu.style.display = 'block'
+        var soma= n1 + n2
+        resu.innerHTML = `${soma}`
+    }
+</script>
+</html>

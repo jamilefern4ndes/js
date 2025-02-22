@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contador</title>
+    <style>
+        body{
+            background-color: rgb(26, 0, 0);
+        }
+        main{
+            height: 70vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        section{
+            text-align: right;
+            background-color: white;
+            padding: 10px;
+        }
+        input{
+            width: 60px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <p>
+                <label for="pri">Primeiro Algarismo</label>
+                <input type="number" name="pri" id="pri" value="0">
+            </p>
+            <p>
+                <label for="ult">Último Algarismo</label>
+                <input type="number" name="ult" id="ult">
+            </p>
+            <p>
+                <label for="int">Intervalo</label>
+                <input type="number" name="int" id="int" value="1">
+            </p>
+            <p>
+                <input type="button" value="contar" onclick="contar()">
+            </p>
+            <div id="res"></div>
+        </section>
+    </main>
+</body>
+<script>
+    function contar(){
+        var pa = Number(document.getElementById('pri').value)
+        var up = Number(document.getElementById('ult').value)
+        var res = document.getElementById('res')
+        var int = Number(document.getElementById('int').value)
+        var cont = pa
+        while(cont <= up){
+            res.innerText += `→ ${cont}`
+            cont += int
+        }
+
+    }
+</script>
+</html>

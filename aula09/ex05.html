@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <h1>Aprendendo DOM</h1>
+    <p>Parágrafo de exemplo</p>
+    <p>esse é pro <strong>DOM</strong></p>
+    <div>click</div>
+</body>
+<script>
+    var p = window.document.getElementsByTagName('p')[0]
+    p.style.color = 'darkgray'
+    window.document.body.style.color = 'white'
+    window.document.body.style.background = 'darkred'
+</script>
+</html>

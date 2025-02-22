@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eventos dom</title>
+    <style>
+        main{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        div{
+            text-align: center;
+            line-height: 100px;
+            width: 100px;
+            height: 100px;
+            background-color: lime;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div id="div">
+        interaja
+        </div>
+    </main>
+</body>
+<script>
+    var a = document.getElementById('div')
+    a.addEventListener('click', clicou)
+    a.addEventListener('mouseenter', entrou)
+    a.addEventListener('mouseout', saiu)
+    a.addEventListener('mousedown', segurou)
+    a.addEventListener('mouseup', soltou)
+    function entrou(){
+        a.style.background = 'lightblue'
+    }
+    function clicou(){
+        a.innerText = 'clicou'
+    }
+    function saiu(){
+        a.style.background = 'lime'
+    }
+    function segurou(){
+        a.style.color='darkred'
+        a.innerText='segurando'
+    }
+    function soltou(){
+        a.style.color = 'black'
+    }
+</script>
+</html>
