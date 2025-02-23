@@ -23,6 +23,17 @@
         input{
             width: 60px;
         }
+        #botao{
+            text-align: center;
+        }
+        #res{
+            border: 1px solid gray;
+            width: 200px;
+            display: flex;
+            flex-flow: column wrap;
+            padding: 5px;
+            font-size: 0.6em;
+        }
     </style>
 </head>
 <body>
@@ -40,10 +51,11 @@
                 <label for="int">Intervalo</label>
                 <input type="number" name="int" id="int" value="1">
             </p>
-            <p>
+            <p id="botao">
                 <input type="button" value="contar" onclick="contar()">
             </p>
-            <div id="res"></div>
+            <div id="res">
+            </div>
         </section>
     </main>
 </body>
