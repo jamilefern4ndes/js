@@ -1,0 +1,31 @@
+funções são um conjunto de comandos em bloco que são acionados em determinados momentos. seja automaticamente por meio de chamados diretos no código o em situações oportunas por meio de disparos.
+
+exemplo: chamado automatico.
+    function exemplo(){
+        bloco...
+    }
+    exemplo()
+
+exemplo: chamado no html
+
+    function exemplo(){
+        bloco...
+    }
+    no html => onclick = "exemplo"
+
+
+funções com parâmetros:
+são funções que são iniciadas com valores que são modificados externamente.
+exemplo:
+
+    function soma(n1, n2){
+        return(n1+n2)
+    }
+    console.log(soma(2,5)) 
+     => a ordem que os valores são colocados, é a ordem seguida pelo parâmetro.
+     => o return transforma a função no resultado.
+
+
+
+
+exemplo prático nos arquivos index

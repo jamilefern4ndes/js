@@ -1,0 +1,15 @@
+funcões anonimas são funções guardadas em variáveis que são criadas somente na hora da execução. Não possuem nome associado a elas.
+
+exemplo:
+    let f = function (v1,v2){
+        bloco
+    }
+
+dentro das funções anonimas existem funcões construtoras, que são funções para ocasiões mais resumidas e que usam o parâmetro o módulo new
+
+//nessa função, function se escreve sempre com F mai, e todos os parametros são entre aspas, com o bloco de comandos incluso.
+
+exemplo:
+    let f= new Function("v1", "v2"," return v1+v2")
+
+exemplos práticos nos arquivos

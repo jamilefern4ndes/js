@@ -1,0 +1,2 @@
+manipulação do css atravez do DOM em js
+

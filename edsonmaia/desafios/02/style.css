@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+*{
+    margin: 0; padding: 0;
+}
+body{
+    background-color: rgb(163, 163, 163);
+    padding: 10px;
+}
+main{
+    padding: 20px;
+    margin: 10px;
+    height: 77vh;
+    background-color: rgb(123, 175, 121);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+section{
+    background-color: rgba(0, 0, 0, 0.185);
+    width: 200px;
+}
+.but{
+    padding: 10px;
+    width: 60px;
+    border: 1px solid black;
+    background-color: wheat;
+}
+
+.dark, #btndark{
+    background-color: rgb(26, 26, 26);
+    color: white;
+}
+.light, #btnlight{
+    background-color: white;
+    color: black;
+}
+.lgbt, #btnlgbt{
+    background-image: linear-gradient(to left, #E20714, #EA5A0D, #978105, #0B983A, #0E4094);
+    color: white;
+}

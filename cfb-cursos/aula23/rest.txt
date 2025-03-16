@@ -1,0 +1,17 @@
+o parâmetro rest transforma a função para que n tenha uma quantidade de valores específica, por exemplo, para somar varios valores. 
+exemplo:
+    function soma(...valores) //transforma em array
+    let tam = valores.length
+    let res = 0
+    for (let i=0; i<tam; i ++){
+        res += valores
+    }    ///na chamada pode colocar quisquer valor que sera somado
+
+exemplo 2: for simplificado
+    function soma (...valores)
+    res = 0 
+    for (let v of valores){
+        res += v
+    }
+
+exemplo prático nos arquivos
