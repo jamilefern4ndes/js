@@ -1,4 +1,15 @@
 let tela = document.querySelector('main')
+let botoes = document.getElementById('botoes')
+
+function tema() {
+    if (botoes.style.display === '' || botoes.style.display === 'none') {
+        botoes.style.display = 'block';
+    } else {
+        botoes.style.display = 'none';
+    }
+}
+
+
 function modoDark(){
     tela.classList.add("dark")
     tela.classList.remove("light")
