@@ -1,0 +1,15 @@
+lista de eventos que ocorrem no html, teclado ou mouse
+quando chamados pelo html, escritos com on. 
+Exemplo: onclick(...)
+se chamados pelo script, usamos o .addeventlistner('evento', ação)
+
+os mais usados são
+click 
+scroll
+mouseover
+focus
+focusout
+keypress
+submit
+change
+

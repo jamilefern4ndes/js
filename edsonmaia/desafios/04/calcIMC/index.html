@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>IMC</title>
+</head>
+<body>
+    <main>
+        <h1>I M C</h1>
+        <form action="#" autocomplete="off">
+            <label for="ino">nome</label>
+            <input type="text" name="nom" id="ino" autofocus>
+    
+            <label for="idd">idade</label>
+            <input type="number" name="idd" id="idd">
+        
+            <label for="ipe">peso</label>
+            <input type="number" name="peso" id="ipe" step="0.01">
+        
+            <label for="ialt">altura</label>
+            <input type="number" name="alt" id="ialt" step="0.01">
+            <p>
+                <button onclick="calc(event)" class="botoes">enviar</button>
+                <input type="reset" value="limpar" class="botoes" step="0.01">
+            </p>
+            <p>
+                <label for="imc">IMC:</label>
+                <input type="text" name="imc" id="imc" disabled value="0,0">
+            </p>
+        </form>
+        <div id="registro"> </div>
+    </main>
+</body>
+<script src="script.js">
+</script>
+</html>
