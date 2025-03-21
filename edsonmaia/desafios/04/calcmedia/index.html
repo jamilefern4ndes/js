@@ -9,7 +9,26 @@
 <body>
     <main>
         <form action="#">
+            <label for="alu">Aluno</label>
+            <input type="text" name="alu" id="alu">
+            <p>
+                <label for="n1">nota 1</label>
+                <input type="number" name="n1" id="n1" step="0.1">
+            </p>
+            <p>
+                <label for="n2">nota 2</label>
+                <input type="number" name="n2" id="n2" step="0.1">
+            </p>
+            <p>
+                <button onclick="calc(event)" class="botoes" id="bte">enviar</button>
+                <input type="reset" value="limpar" class="botoes" id="btl" step="0.01">
+            </p>
 
+            <p id="resmed">
+                <label for="med">Média:</label>
+                <input type="text" name="med" id="med" disabled value="0,0">
+            </p>
+            <div id="res"></div>
         </form>
     </main>
 </body>
