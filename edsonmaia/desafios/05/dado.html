@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dado</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+<body id="tela">
+    <main>
+        <section>
+            <button id="tema" onclick="tema()">
+                <span class="material-symbols-outlined">
+                    routine
+                </span>
+            </button>
+            <p id="botao">
+                <button class="botao" id="btd" onclick="temadark()">dark</button>
+                <button class="botao" id="btl" onclick="temalight()">light</button>
+            </p>
+        </section>
+        <picture class="imagem">
+            <img src="dado/dado0.png" alt="dado"
+            id="imagemdado">
+        </picture>
+    </main>
+    <p><button id="sortear" onclick="sorteio()">sortear</button></p>
+
+<audio preload
+id="audio"
+src="audio/dado.mp3" type="audio/mpeg">
+</audio>
+
+</body>
+<script src="script.js">
+</script>
+</html>
