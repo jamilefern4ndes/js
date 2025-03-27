@@ -34,7 +34,7 @@ function converter() {
         valorConvertido.innerHTML = `${reais} Reais em Libra: £ ${(reais / lib).toFixed(2)}`
     }
     //estilização
-    valorConvertido.style.backgroundColor = 'rgba(0, 0, 0, 0.18)'
+    valorConvertido.style.backgroundColor = 'rgba(0, 0, 0, 0.29)'
     valorConvertido.style.padding = '10px'
     valorConvertido.style.borderRadius = '5px'
 }
