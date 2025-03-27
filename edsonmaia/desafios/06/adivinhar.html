@@ -7,19 +7,28 @@
     <title>Adivinhar</title>
 </head>
 <body>
+    <button
+     id="musica"
+     onclick="audio()"
+     >🔈</button>
     <main>
+        
         <h2>Tente adivinhar</h2>
         <section id="area">
             <input type="number" name="valuser" id="valuser">
             <button id="btverificar">teste</button>
         </section>
-        <section 
-            id="arearetorno">
+        <section id="arearetorno">
             <p id="retorno">
                 um valor entre <br>
                 1 e 6
             </p>
         </section>
+        <audio preload
+            loop
+            id="audio"
+            src="audio/suspense.mp3">
+        </audio>
     </main>
 </body>
 <script src="script.js"></script>

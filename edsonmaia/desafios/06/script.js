@@ -22,3 +22,17 @@ bt.addEventListener('click', function () {
     document.querySelector('#valuser').value = ''
 })
 
+let tocaaudio = document.querySelector('#audio')
+let controle = false
+let btmusica = document.querySelector('#musica')
+function audio(){
+    if (controle){
+        tocaaudio.pause()
+        controle = false
+        btmusica.innerHTML = '🔈'
+    } else {
+        tocaaudio.play()
+        controle = true
+        btmusica.innerHTML = '🔊'
+    }
+}

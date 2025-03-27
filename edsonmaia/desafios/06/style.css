@@ -10,6 +10,8 @@ body{
     padding: 20px;
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
 
 }
 
@@ -64,4 +66,12 @@ p#retorno{
 .errou{
     background-color: darkred;
     color: white;
+}
+
+#musica{
+    background-color: rgba(255, 255, 255, 0.171);
+    border: 1px solid black;
+    padding: 5px;
+    align-self: flex-start;
+    
 }
