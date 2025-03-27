@@ -10,7 +10,10 @@
     <main>
         <p>
             <label for="val">R$</label>
-            <input type="number" name="val" id="val">
+            <input 
+                type="number" 
+                name="val" id="val" 
+                step="0.01">
         </p>
         <p>
             <label for="opcao">Moeda:</label>
@@ -22,7 +25,7 @@
             </select>
         </p>
         <p>
-            <button class="botao" id="btconverter" onclick="converter()">converter</button>
+            <button class="botao" id="btconverter" onclick="converter()" disabled>converter</button>
         </p>
         <section id="valorConvertido">
         </section>
@@ -34,5 +37,6 @@
             <div></div>
     </footer>
 </body>
-<script src="script.js"></script>
+<script src="script.js">
+</script>
 </html>
