@@ -1,0 +1,2 @@
+conversor de temperatura 
+celcius para °f e k

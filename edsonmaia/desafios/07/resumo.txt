@@ -1,0 +1,3 @@
+conversor de moeda br
+para dolar, euro e libra
+com valores ilustrativos

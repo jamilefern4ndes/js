@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Conversor de Temperatura</title>
+</head>
+<body>
+    <header>
+        <h1>Conversor de Temperatura</h1>
+    </header>
+    <main>
+        <section>
+            <input type="range" name="range" id="range" value="0" min="1" max="1000" step="1" oninput="atualizarvalor()">
+            <p>
+                <input type="number" name="celcius" id="celcius" value="1" disabled> 
+                °C
+            </p>
+            <p>
+                <input type="number" name="fire" id="fire" value="32" disabled> 
+                °F
+            </p>
+            <input type="number" name="k" id="k" value="273" disabled> 
+                K
+        </section>
+    </main>
+</body>
+<script src="script.js" > </script>
+</html>
