@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+*{
+    margin: 0; padding: 0;
+}
+body{
+    background-color: rgb(14, 0, 36);
+}
+main{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section{
+    background-color: rgba(255, 255, 255, 0.055);
+    border: 1px groove black;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+}
+section div#hora{
+    border: 1px solid black;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+section div#calendario{
+    display: flex;
+}
+.diaSemana{
+    color: rgb(248, 132, 0);
+    margin-right: 5px;
+    font-size: 12px;
+}
+

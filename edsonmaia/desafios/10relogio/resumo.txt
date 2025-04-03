@@ -1,0 +1,1 @@
+relógio smart com hora completa, data e previsão do tempo (se possível)
