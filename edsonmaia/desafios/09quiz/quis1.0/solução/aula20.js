@@ -114,7 +114,7 @@ function proximaQuestao(nQuestao) {
 
 function bloquearAlternativas() {
     a.classList.add('bloqueado')
-    b.classList.add('bloqueado')
+    b.classList.add('bloqueado') 
     c.classList.add('bloqueado')
 }
 

@@ -66,3 +66,8 @@ c.textContent = q1.alternativaC
 a.setAttribute('value', '1A')
 b.setAttribute('value', '1B')
 c.setAttribute('value', '1C')
+
+function verificarAcerto(){
+     let numeroDaQuestao = nQuestao.value
+     console.log(numeroDaQuestao)
+}
