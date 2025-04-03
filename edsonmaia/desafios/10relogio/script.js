@@ -51,3 +51,5 @@ setInterval(() =>{
 //estilo
 areaDiaSemana.classList.add('diaSemana')
 
+//efeito sonoro
+document.querySelector('#audio').play()
