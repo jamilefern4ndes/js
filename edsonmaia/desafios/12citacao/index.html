@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Citação Diária</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+
+    <main id="telaPrincipal"> 
+        <header>
+        <h1>CRIAR MENSAGENS</h1>
+        </header>
+        
+        <section id="entradaDados">
+             <p>
+                <input type="date" name="data" id="data" required>
+             </p>
+             <p>
+                <textarea name="mensagem" id="mensagem" placeholder="Digite sua mensagem" required></textarea>
+             </p>
+             <p>
+                <input type="text" name="autor" id="autor" placeholder="Autoria" required>
+             </p>
+             <p>
+                <button id="criar" onclick="novaSessao()">Criar</button>
+             </p>
+        </section>
+    </main>
+    <footer>
+        <p>criado por ©Jamile fernandes</p>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>
