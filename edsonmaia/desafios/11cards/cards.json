@@ -1,0 +1,46 @@
+{
+  "personagens": [
+    {
+      "nome": "Ken Kaneki",
+      "idade": 18,
+      "altura": 1.70,
+      "tipo": "Ghoul Híbrido",
+      "foto": "kaneki.jpeg"
+    },
+    {
+      "nome": "Touka Kirishima",
+      "idade": 16,
+      "altura": 1.56,
+      "tipo": "Ghoul",
+      "foto": "touk.jpg"
+    },
+    {
+      "nome": "Hideyoshi Nagachika",
+      "idade": 19,
+      "altura": 1.71,
+      "tipo": "Humano",
+      "foto": "hide.jpg"
+    },
+    {
+      "nome": "Hinami Fueguchi",
+      "idade": 13,
+      "altura": 1.48,
+      "tipo": "Ghoul",
+      "foto": "hiname.jpeg"
+    },
+    {
+      "nome": "Kureo Mado",
+      "idade": "sem idade definida",
+      "altura": 1.71,
+      "tipo": "Humano",
+      "foto": "mado.jpg"
+    },
+    {
+      "nome": "Rize Kamashiro",
+      "idade": "sem idade definida",
+      "altura": 1.64,
+      "tipo": "Ghoul",
+      "foto": "rize.jpeg"
+    }
+  ]
+}
