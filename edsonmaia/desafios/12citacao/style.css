@@ -1,4 +1,8 @@
 @charset "UTF-8";
+@font-face {
+    font-family: 'fonte1';
+    src: url('fontes/PinyonScript-Regular.ttf') format('Truetype');
+}
 
 *{
     margin: 0; padding: 0;
@@ -37,8 +41,9 @@ input{
 }
 textarea{
     border: none;
-    width: 220px;
+    width: 210px;
     height: 100px;
+    padding: 5px;
     box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.13);
 }
 button#criar, button.btnreload{
@@ -62,9 +67,35 @@ footer{
 }
 
 .novasessao{
+    padding: 10px;
     width: 400px;
     height: 400px;
     background-color: rgb(34, 34, 34);
     align-self: center;
     color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column nowrap;
+}
+
+.divData{
+    align-self: flex-start;
+    padding: 10px;
+    position: relative;
+    top: -20%;
+    font-family: 'Courier New', Courier, monospace;
+}
+.divMsg{
+    align-self: center;
+    max-width: 200px;
+    text-align: justify;
+    font-family: fonte1;
+    font-size: 1.3em;
+}
+.divAutor{
+    align-self: flex-end;
+    font-family: 'Courier New', Courier, monospace;
+    position: relative;
+    bottom: -15%;
 }
