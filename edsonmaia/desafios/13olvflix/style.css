@@ -1,0 +1,104 @@
+@charset "UTF-8";
+
+*{
+    margin: 0; padding: 0; box-sizing: content-box;
+}
+body, html{
+    background-image: radial-gradient( rgb(43, 43, 43), rgb(31, 30, 30) ,black);
+    color: white;
+    background-repeat: no-repeat;
+    height: 100%;
+    background-attachment: fixed;
+    position: relative;
+}
+header{
+    height: 10vh;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.777),rgba(0, 0, 0, 0.555), rgba(0, 0, 0, 0.300), rgba(0, 0, 0, 0));
+}
+header p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    color: darkorange;
+  
+}
+header button{
+    width: 50px;
+    font-size: 10px;
+    display: block; 
+    padding: 3px;
+    background-color: rgb(34, 34, 34);
+    border: 1px solid rgb(56, 56, 56);
+    margin: 1px;
+    color: white;
+}
+main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+section{ 
+    margin-top: 2vh;
+    background-color: rgba(0, 0, 0, 0.100); 
+    box-shadow: 0px 0px 4px 5px rgba(0, 0, 0, 0.220);   
+    border-radius: 10px;
+    max-width: 300px;
+}
+section div#conteudo{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    padding: 5px;
+}
+#titulo{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: sticky;
+    top: -50%;
+    text-align: center;
+    color: darkorange;
+}
+section button{
+    padding: 40px 2px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.349);
+    color: darkorange;
+}
+section button:hover{
+    background-color: rgba(255, 255, 255, 0.514);
+}
+article{
+    margin: 0px 4px;
+    display: flex;
+    flex-flow: row nowrap;
+}
+article a, img{
+    text-decoration: none;
+    width: 90px;
+}
+
+footer{
+    padding: 2px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 16px;
+    font-size: 12px;
+    position: sticky;
+    bottom: -50%;
+}
+
+.temaDark{
+    background-image: radial-gradient( rgb(43, 43, 43), rgb(31, 30, 30) ,black);
+    color: white;
+}
+.temaClaro{
+    background-image: radial-gradient( rgb(204, 204, 204), rgb(235, 235, 235) ,rgb(255, 255, 255));
+    color: black;
+
+}
