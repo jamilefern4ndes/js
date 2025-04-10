@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @font-face {
     font-family: 'fonte1';
-    src: url('fontes/PinyonScript-Regular.ttf') format('Truetype');
+    src: url('fontes/Lato-LightItalic.ttf') format('Truetype');
 }
 
 *{
@@ -46,7 +46,7 @@ textarea{
     padding: 5px;
     box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.13);
 }
-button#criar, button.btnreload{
+button#criar, button.btnreload, button.btnNewBackground, button.btnDownload{
     width: 150px;
     padding: 12px;
     background-color: crimson;
@@ -56,6 +56,17 @@ button#criar, button.btnreload{
 button.btnreload{
     margin: 10px;
     background-color: greenyellow;
+    align-self: center;
+}
+button.btnNewBackground{
+    margin: 10px;
+    background-color: rgb(0, 0, 0);
+    align-self: center;
+    color: white;
+}
+button.btnDownload{
+    margin: 10px;
+    background-color: rgb(2, 243, 122);
     align-self: center;
 }
 footer{
@@ -71,8 +82,12 @@ footer{
     width: 400px;
     height: 400px;
     background-color: rgb(34, 34, 34);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
     align-self: center;
     color: white;
+    text-shadow: 0px 0px 6px rgb(0, 0, 0);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -91,7 +106,7 @@ footer{
     max-width: 200px;
     text-align: justify;
     font-family: fonte1;
-    font-size: 1.3em;
+    font-size: 1.4em;
 }
 .divAutor{
     align-self: flex-end;

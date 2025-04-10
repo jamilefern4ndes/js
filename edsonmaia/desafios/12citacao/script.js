@@ -12,9 +12,9 @@ dataInput.addEventListener('change', function () {
 
 
 let tela = document.querySelector('#telaPrincipal')
-let newsection = document.createElement('section')
+let newsection = document.createElement('picture')
 
-//criar uma nova sessão
+
 function criarImagem() {
     let data = document.querySelector('#data').value
     //formatar data
@@ -23,18 +23,30 @@ function criarImagem() {
 
     let mensagem = document.querySelector('#mensagem').value
     let autor = document.querySelector('#autor').value
+     
+    //criar sessão
     tela.innerHTML = ""
     tela.appendChild(newsection)
     newsection.setAttribute('class', 'novasessao')
+
+    //botões
+    let btnNewBackground = document.createElement('button')
+    btnNewBackground.setAttribute('class', 'btnNewBackground')
+    btnNewBackground.innerText = 'alterar fundo'
+    tela.appendChild(btnNewBackground)
+    btnNewBackground.addEventListener("click", mudarFundo)
+
+    let btnDownload = document.createElement('button')
+    btnDownload.setAttribute('class', 'btnDownload')
+    btnDownload.innerText = 'Download'
+    btnDownload.addEventListener('click', downloadSection)
+    tela.appendChild(btnDownload)
 
     let btnreload = document.createElement('button')
     btnreload.setAttribute('class', 'btnreload')
     btnreload.innerText = 'Nova Mensagem'
     tela.appendChild(btnreload)
-
-    btnreload.addEventListener("click", function () {
-        location.reload() 
-    });
+    btnreload.addEventListener("click", reload)
 
     //divisoes
     let divData = document.createElement('div')
@@ -53,6 +65,25 @@ function criarImagem() {
     newsection.appendChild(divAutor)
 
 }
-
-
+function reload(){
+    location.reload()
+}
+let fundo = 0
+function mudarFundo(){
+    fundo ++
+    newsection.style.backgroundImage = `url('imagens/fundo${fundo}.jpeg')`
+    console.log(fundo)
+    if (fundo > 6){
+        fundo = 1
+    }
+}
+function downloadSection() {
+    html2canvas(newsection).then(canvas => {
+        // Converção
+        let imageLink = document.createElement('a')
+        imageLink.href = canvas.toDataURL('image/png')
+        imageLink.download = 'suamensagem.png'
+        imageLink.click()
+    });
+}
 
