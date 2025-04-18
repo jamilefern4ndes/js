@@ -1,9 +1,5 @@
-@media screen and (min-width: 700px){
-    article a img {
-        width: 200px; 
-        margin: 5px;
-    }
-    section{
-        max-width: 900px;
+@media screen and (min-width: 600px){
+    article.categoria{
+        width: 600px;
     }
 }
