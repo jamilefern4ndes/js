@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Coordenadas Geográfricas</title>
+</head>
+<body>
+    <header>
+        <h1>Coordenadas Geográficas - GAME</h1>
+        <section class="form">
+            <div id="divLatitude">
+
+                <label for="lat">Latitude: </label>
+                <input type="number" name="lat" id="lat" min="0" max="90" step="5" required>
+
+                <label for="direcNS">direção</label>
+                <select name="direcNS" id="direcNS">
+                    <option value="---">---</option>
+                    <option value="norte">N</option>
+                    <option value="sul">S</option>
+                </select>
+            </div>
+
+            <div id="divLongitude">
+
+                <label for="long">Longitude: </label>
+                <input type="number" name="long" id="long"
+                min="0" max="90" step="5" required> 
+
+                <label for="direcLO">direção</label>
+                <select name="direcLO" id="direcLO">
+                    <option value="---">---</option>
+                    <option value="Leste">L</option>
+                    <option value="Oeste">O</option>
+                </select>
+            </div> 
+
+            <button id="btnJogar" onclick="jogar()">Jogar</button>
+
+        </section>
+        <!-- <aside id="coordenadas">
+
+        </aside> -->
+    </header>
+    <main>
+       
+        <section class="conteudos">
+            <div id="linhaLatitude"></div>
+            <div id="linhaLongitude"></div>
+            <img 
+                id="mapa"
+                src="images/mapa-das-coordenadas.png" alt="fotoMapa" >
+        </section>
+    </main>
+     <footer>
+        <p>Projeto recriado por <a href="https://github.com/jamilefern4ndes">&copy;Jamile Fernandes</a> para fins didáticos</p>
+    </footer> 
+</body>
+<script src="script.js"></script>
+</html>
