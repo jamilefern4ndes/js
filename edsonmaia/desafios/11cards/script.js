@@ -27,6 +27,7 @@ function pegarDados() {
             // Crie as cartas dinamicamente
             dados.personagens.forEach(personagem => {
                 desenharCarta(personagem);
+                desenharCarta(personagem)
             });
         })
     .catch(error => console.log("Erro ao carregar JSON: ", error));

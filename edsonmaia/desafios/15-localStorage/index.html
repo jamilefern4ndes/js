@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>LocalStorage</title>
+    <script src="script.js" defer></script> 
+</head>
+<body>
+    <main>
+        
+        <form id="name-form">
+            <h2>PREENCHA</h2>
+            <input
+                type="text"
+                name="name"
+                id="inputName"
+                required
+                autocomplete="off"
+                placeholder="seu nome (enter p/enviar)">
+            <!-- <input
+                type="submit"
+                value="enviar"> -->
+        </form>
+        <div id="container">
+            <p>Seja bem vindo, <span id="userName"></span>!</p>
+            <button id="logout">x</button>
+        </div>
+    </main>
+</body>
+</html>
